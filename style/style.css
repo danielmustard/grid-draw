@@ -1,0 +1,18 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.gridContainer{
+    border: thin solid red;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(16, 0fr);
+    grid-template-rows: repeat(16, 0fr);
+}
+
+.gridChild{
+    height: 30px;
+    width: 30px;
+}
