@@ -1,18 +1,19 @@
-
+/* 
 body{
     display: flex;
     justify-content: center;
+} */
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
-
 .gridContainer{
-    border: thin solid red;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(16, 0fr);
-    grid-template-rows: repeat(16, 0fr);
+    width: 500px;
+    height: 500px;
 }
 
 .gridChild{
-    height: 30px;
-    width: 30px;
+    background-color: aqua;
 }
