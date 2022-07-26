@@ -5,11 +5,6 @@ const gridChildren = document.getElementsByClassName("gridChild")
 
 let selectedColour = "";
 
-
-function logColour(input) {
-    return input = selectedColour;
-}
-
 //Function that makes grid
 let makeGrid = (size) =>{
     
@@ -34,15 +29,20 @@ let makeGrid = (size) =>{
 
 //function that makes new grid of size set by user
 let changeSize = (input) => {
+  if (input > 100){
+    return alert('Grid size too big')
+  }else{
     makeGrid(input);
+  }
+    
 } 
 
 //Changing div colour on mouse over
 let changeColour = (e) =>{
-      let divToChange = e.toElement;
-    //   console.log(selectedColour)
-      divToChange.style.background=`green`;
-
+  //Each time this function is called it gets the value set inside the colour selector and then applies the colour to the bg
+  let selectedColour = document.getElementById('color-selector').value
+  let divToChange = e.target;
+  divToChange.style.background=`${selectedColour}`;
 }
 //Clear style from div for clear button
 let clearGrid = () =>{

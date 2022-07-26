@@ -10,22 +10,32 @@
 </head>
 <body onload="makeGrid(16)">
     
+    
+    
     <!-- Div that holds the grid, grid content injected by javascript -->
-    <div class="flexContainer">
-        <div class="menu">
-            <button onclick="clearGrid()">Clear Grid</button>
-            <input type="color" id="color-selector" onchange="logColour(this.value)">
-
+        <div class="titleContainer">
+            <h1>
+                Etch A Sketch
+            </h1>
         </div>
-        <div class="gridContainer" id="grid-container">
-            <!-- Grid content injected by javascript inside here -->
+
+        <div class="flexContainer">
+            
+            <div class="gridContainer" id="grid-container">
+                <!-- Grid content injected by javascript inside here -->
+            </div>
         </div>
         
-    </div>
-    <div class="x-axisButtons">
-        <label>Enter grid size:</label><input type="text" id="userGridSize" value="16" onchange="changeSize(this.value)">
-        <button>Submit</button>
-    </div>
+        <div class="menu">
+            <button onclick="makeGrid(16)">Clear Grid</button>
+            <input type="color" id="color-selector">
+            <label>Enter grid size:</label><input type="text" id="userGridSize" autocomplete="off" placeholder="16" value="16" onchange="changeSize(this.value)">
+            <button>Submit</button>
+
+        </div>
+        
+    
+    
     
        
 
