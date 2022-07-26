@@ -12,14 +12,22 @@
     
     <!-- Div that holds the grid, grid content injected by javascript -->
     <div class="flexContainer">
+        <div class="menu">
+            <button onclick="clearGrid()">Clear Grid</button>
+            <input type="color" id="color-selector" onchange="logColour(this.value)">
+
+        </div>
         <div class="gridContainer" id="grid-container">
             <!-- Grid content injected by javascript inside here -->
         </div>
+        
     </div>
-    <input type="text" id="userGridSize" value="16" onchange="changeSize(this.value)">
-    <button>Submit</button>
-    <br>
-    <button onclick="clearGrid()">Clear Grid</button>    
+    <div class="x-axisButtons">
+        <label>Enter grid size:</label><input type="text" id="userGridSize" value="16" onchange="changeSize(this.value)">
+        <button>Submit</button>
+    </div>
+    
+       
 
     
 

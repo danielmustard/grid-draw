@@ -3,6 +3,13 @@ gridContainer = document.getElementById('grid-container');
 //Collecting each div element that is inside the grid
 const gridChildren = document.getElementsByClassName("gridChild")
 
+let selectedColour = "";
+
+
+function logColour(input) {
+    return input = selectedColour;
+}
+
 //Function that makes grid
 let makeGrid = (size) =>{
     
@@ -24,6 +31,7 @@ let makeGrid = (size) =>{
       Array.from(gridChildren).forEach(child => child.addEventListener('mouseover',changeColour));
 }
 
+
 //function that makes new grid of size set by user
 let changeSize = (input) => {
     makeGrid(input);
@@ -32,11 +40,12 @@ let changeSize = (input) => {
 //Changing div colour on mouse over
 let changeColour = (e) =>{
       let divToChange = e.toElement;
-      divToChange.style.background="black";      
+    //   console.log(selectedColour)
+      divToChange.style.background=`green`;
+
 }
-
-
 //Clear style from div for clear button
 let clearGrid = () =>{
-    Array.from(gridChildren).forEach(child => child.style.background="white");
+    Array.from(gridChildren).forEach(child => child.style.background="azure");
 }
+

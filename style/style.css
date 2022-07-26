@@ -1,19 +1,28 @@
-/* 
 body{
-    display: flex;
-    justify-content: center;
-} */
+    background:#696969;
+}
 .flexContainer{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    gap: 20px;
 }
 .gridContainer{
     display: grid;
     width: 500px;
     height: 500px;
 }
-
 .gridChild{
-    background-color: aqua;
+    background-color: azure;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.x-axisButtons{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    gap: 10px;
 }
