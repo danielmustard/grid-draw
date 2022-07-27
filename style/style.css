@@ -1,6 +1,6 @@
 @font-face {
     font-family: manga;
-    src: url(/fonts/mangat.ttf);
+    src: url(../fonts/mangat.ttf);
 }
 :root{
     padding: 0;
