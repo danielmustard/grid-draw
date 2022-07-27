@@ -1,24 +1,35 @@
 @font-face {
-    font-family: Coolvetica;
-    src: url(/fonts/coolvetica-rg.otf);
+    font-family: manga;
+    src: url(/fonts/mangat.ttf);
 }
 :root{
     padding: 0;
     margin: 0;
+    overflow-y: hidden;
 }
 
 body{
-    background:#696969;
-    font-family: Coolvetica;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1{
     text-align: center;
+    color: white;
+    font-family: manga;
+    margin: 0;
 }
 .flexContainer{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     gap: 20px;
 }
 .gridContainer{
@@ -35,18 +46,19 @@ h1{
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .x-axisButtons{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:10px;
     gap: 10px;
     align-items: center;
 }
 
-.menu > input{
-    align-self: center;
+#userGridSize{
+    width: 5%;
+    text-align: center;
 }
 #color-selector{
     width: 100px;
